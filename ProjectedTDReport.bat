@@ -1,14 +1,10 @@
 @echo off
-
 REM Set the new script directory path
 set "SCRIPT_DIR=C:\ProgramData\Jenkins\.jenkins\workspace\Python Scripts\Projected TD Report\scripts"
 
 REM Change to the directory containing the scripts
 cd "%SCRIPT_DIR%"
-
-REM Ensure Python is accessible
-set "PYTHON_EXE=C:\Users\mppamin\AppData\Local\Programs\Python\Python311\python.exe"
-%PYTHON_EXE% --version
+echo Current directory: %CD%
 
 
 
