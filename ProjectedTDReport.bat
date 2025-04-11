@@ -12,7 +12,7 @@ set "START_TIME=%time%"
 REM Run the first Python script and log output to log.txt while showing prints in the terminal
 set "TIMER_START=%time%"
 echo [%date% %time%] Running queryntr(ntr_tbl).py... >> log.txt
-python queryntr(ntr_tbl).py
+python "queryntr(ntr_tbl).py"
 echo [%date% %time%] Finished running queryntr(ntr_tbl).py >> log.txt
 
 REM Calculate elapsed time for queryntr(ntr_tbl).py
