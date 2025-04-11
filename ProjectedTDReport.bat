@@ -1,13 +1,14 @@
 @echo off
 
-set "PYTHON_EXE=C:\Users\mppamin\AppData\Local\Programs\Python\Python311\python.exe"
+REM Set the new script directory path
+set "SCRIPT_DIR=C:\ProgramData\Jenkins\.jenkins\workspace\Python Scripts\Projected TD Report\scripts"
 
-%PYTHON_EXE% -c "import os; print(os.path.join(os.path.expanduser('~'), 'Desktop', 'ProjectedTD', 'scripts'))" > temp_path.txt
-set /p SCRIPT_DIR=<temp_path.txt
-echo SCRIPT_DIR=%SCRIPT_DIR%
-pause
-del temp_path.txt
+REM Change to the directory containing the scripts
 cd "%SCRIPT_DIR%"
+
+REM Ensure Python is accessible
+set "PYTHON_EXE=C:\Users\mppamin\AppData\Local\Programs\Python\Python311\python.exe"
+%PYTHON_EXE% --version
 
 
 
