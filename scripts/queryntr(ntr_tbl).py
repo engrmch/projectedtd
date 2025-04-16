@@ -10,10 +10,10 @@ import xlwings as xw
 # SQL connection details
 db_config = {
     'driver': '{MariaDB ODBC 3.1 Driver}',
-    'server': '182.18.209.91',
-    'database': 'noc_db',
-    'user': 'system',
-    'password': 'J4b0ngg469@',
+    'server': '1',
+    'database': '',
+    'user': '',
+    'password': '',
     'charset': 'utf8',  # Add this if you are dealing with special characters
 }
 
