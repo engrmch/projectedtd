@@ -8,10 +8,10 @@ import os
 # SQL connection details
 db_config = {
     'driver': '{MariaDB ODBC 3.1 Driver}',
-    'server': '182.18.194.140',
-    'database': 'reports',
-    'user': 'system',
-    'password': 'J4b0ngg469@',
+    'server': '',
+    'database': '',
+    'user': '',
+    'password': '',
     'charset': 'utf8',  # Add this if you are dealing with special characters
 }
 
